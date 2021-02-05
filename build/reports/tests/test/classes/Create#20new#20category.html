@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class Create new category</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class Create new category</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; Create new category</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.469s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">0%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="successful category creation"></a>
+<h3 class="failures">successful category creation</h3>
+<span class="code">
+<pre>java.lang.NullPointerException
+	at net.thucydides.core.model.TestOutcome.lambda$assignAbility$7(TestOutcome.java:956)
+	at java.base/java.util.stream.MatchOps$1MatchSink.accept(MatchOps.java:90)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.tryAdvance(ArrayList.java:1632)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(MatchOps.java:230)
+	at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(MatchOps.java:196)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.noneMatch(ReferencePipeline.java:538)
+	at net.thucydides.core.model.TestOutcome.assignAbility(TestOutcome.java:956)
+	at net.serenitybdd.screenplay.EventBusInterface.lambda$assignAbilityToActor$1(EventBusInterface.java:96)
+	at java.base/java.util.Optional.ifPresent(Optional.java:183)
+	at net.serenitybdd.screenplay.EventBusInterface.assignAbilityToActor(EventBusInterface.java:95)
+	at net.serenitybdd.screenplay.Actor.can(Actor.java:82)
+	at net.serenitybdd.screenplay.actors.OnlineCast.actorNamed(OnlineCast.java:45)
+	at net.serenitybdd.screenplay.actors.Stage.lambda$shineSpotlightOn$1(Stage.java:24)
+	at java.base/java.util.Optional.orElseGet(Optional.java:369)
+	at net.serenitybdd.screenplay.actors.Stage.shineSpotlightOn(Stage.java:24)
+	at net.serenitybdd.screenplay.actors.OnStage.theActorCalled(OnStage.java:37)
+	at starter.stepdefinitions.BlogStepDefinition.tomas_must_be_logged_in_and_in_the_Blog_module(BlogStepDefinition.java:30)
+	at ✽.Tomas must be logged in and in the Blog module(file:src/test/resources/features/login/blog.feature:6)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">successful category creation</td>
+<td class="failures">0.469s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Feature: Create new category
+  As a user
+  I want to create a new category and validate it
+
+  Scenario: successful category creation                 ?[90m# src/test/resources/features/login/blog.feature:5?[0m
+10:24:35.791 [Test worker] INFO   - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ &lt; | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+successful category creation(create-new-category;successful-category-creation)
+-------------------------------------------------------------------
+    ?[31mGiven ?[0m?[31mTomas must be logged in and in the Blog module?[0m ?[90m# BlogStepDefinition.tomas_must_be_logged_in_and_in_the_Blog_module()?[0m
+      ?[31mjava.lang.NullPointerException
+	at net.thucydides.core.model.TestOutcome.lambda$assignAbility$7(TestOutcome.java:956)
+	at java.base/java.util.stream.MatchOps$1MatchSink.accept(MatchOps.java:90)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.tryAdvance(ArrayList.java:1632)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(MatchOps.java:230)
+	at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(MatchOps.java:196)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.noneMatch(ReferencePipeline.java:538)
+	at net.thucydides.core.model.TestOutcome.assignAbility(TestOutcome.java:956)
+	at net.serenitybdd.screenplay.EventBusInterface.lambda$assignAbilityToActor$1(EventBusInterface.java:96)
+	at java.base/java.util.Optional.ifPresent(Optional.java:183)
+	at net.serenitybdd.screenplay.EventBusInterface.assignAbilityToActor(EventBusInterface.java:95)
+	at net.serenitybdd.screenplay.Actor.can(Actor.java:82)
+	at net.serenitybdd.screenplay.actors.OnlineCast.actorNamed(OnlineCast.java:45)
+	at net.serenitybdd.screenplay.actors.Stage.lambda$shineSpotlightOn$1(Stage.java:24)
+	at java.base/java.util.Optional.orElseGet(Optional.java:369)
+	at net.serenitybdd.screenplay.actors.Stage.shineSpotlightOn(Stage.java:24)
+	at net.serenitybdd.screenplay.actors.OnStage.theActorCalled(OnStage.java:37)
+	at starter.stepdefinitions.BlogStepDefinition.tomas_must_be_logged_in_and_in_the_Blog_module(BlogStepDefinition.java:30)
+	at ?.Tomas must be logged in and in the Blog module(file:src/test/resources/features/login/blog.feature:6)
+?[0m
+    ?[36mWhen ?[0m?[36mhe create a new category?[0m                        ?[90m# BlogStepDefinition.he_create_a_new_category()?[0m
+    ?[36mThen ?[0m?[36mthe category must be displayed?[0m                  ?[90m# BlogStepDefinition.the_category_must_be_displayed()?[0m
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.8.1</a> at 5/02/2021, 10:24:53 a. m.</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Create new category" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-02-05T15:24:35" hostname="9LPJFP2" time="0.469">
+  <properties/>
+  <testcase name="successful category creation" classname="Create new category" time="0.469">
+    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
+	at net.thucydides.core.model.TestOutcome.lambda$assignAbility$7(TestOutcome.java:956)
+	at java.base/java.util.stream.MatchOps$1MatchSink.accept(MatchOps.java:90)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.tryAdvance(ArrayList.java:1632)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(MatchOps.java:230)
+	at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(MatchOps.java:196)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.noneMatch(ReferencePipeline.java:538)
+	at net.thucydides.core.model.TestOutcome.assignAbility(TestOutcome.java:956)
+	at net.serenitybdd.screenplay.EventBusInterface.lambda$assignAbilityToActor$1(EventBusInterface.java:96)
+	at java.base/java.util.Optional.ifPresent(Optional.java:183)
+	at net.serenitybdd.screenplay.EventBusInterface.assignAbilityToActor(EventBusInterface.java:95)
+	at net.serenitybdd.screenplay.Actor.can(Actor.java:82)
+	at net.serenitybdd.screenplay.actors.OnlineCast.actorNamed(OnlineCast.java:45)
+	at net.serenitybdd.screenplay.actors.Stage.lambda$shineSpotlightOn$1(Stage.java:24)
+	at java.base/java.util.Optional.orElseGet(Optional.java:369)
+	at net.serenitybdd.screenplay.actors.Stage.shineSpotlightOn(Stage.java:24)
+	at net.serenitybdd.screenplay.actors.OnStage.theActorCalled(OnStage.java:37)
+	at starter.stepdefinitions.BlogStepDefinition.tomas_must_be_logged_in_and_in_the_Blog_module(BlogStepDefinition.java:30)
+	at ✽.Tomas must be logged in and in the Blog module(file:src/test/resources/features/login/blog.feature:6)
+</failure>
+  </testcase>
+  <system-out><![CDATA[Feature: Create new category
+  As a user
+  I want to create a new category and validate it
+
+  Scenario: successful category creation                 ?[90m# src/test/resources/features/login/blog.feature:5?[0m
+10:24:35.791 [Test worker] INFO   - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+successful category creation(create-new-category;successful-category-creation)
+-------------------------------------------------------------------
+    ?[31mGiven ?[0m?[31mTomas must be logged in and in the Blog module?[0m ?[90m# BlogStepDefinition.tomas_must_be_logged_in_and_in_the_Blog_module()?[0m
+      ?[31mjava.lang.NullPointerException
+	at net.thucydides.core.model.TestOutcome.lambda$assignAbility$7(TestOutcome.java:956)
+	at java.base/java.util.stream.MatchOps$1MatchSink.accept(MatchOps.java:90)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.tryAdvance(ArrayList.java:1632)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(MatchOps.java:230)
+	at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(MatchOps.java:196)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.noneMatch(ReferencePipeline.java:538)
+	at net.thucydides.core.model.TestOutcome.assignAbility(TestOutcome.java:956)
+	at net.serenitybdd.screenplay.EventBusInterface.lambda$assignAbilityToActor$1(EventBusInterface.java:96)
+	at java.base/java.util.Optional.ifPresent(Optional.java:183)
+	at net.serenitybdd.screenplay.EventBusInterface.assignAbilityToActor(EventBusInterface.java:95)
+	at net.serenitybdd.screenplay.Actor.can(Actor.java:82)
+	at net.serenitybdd.screenplay.actors.OnlineCast.actorNamed(OnlineCast.java:45)
+	at net.serenitybdd.screenplay.actors.Stage.lambda$shineSpotlightOn$1(Stage.java:24)
+	at java.base/java.util.Optional.orElseGet(Optional.java:369)
+	at net.serenitybdd.screenplay.actors.Stage.shineSpotlightOn(Stage.java:24)
+	at net.serenitybdd.screenplay.actors.OnStage.theActorCalled(OnStage.java:37)
+	at starter.stepdefinitions.BlogStepDefinition.tomas_must_be_logged_in_and_in_the_Blog_module(BlogStepDefinition.java:30)
+	at ?.Tomas must be logged in and in the Blog module(file:src/test/resources/features/login/blog.feature:6)
+?[0m
+    ?[36mWhen ?[0m?[36mhe create a new category?[0m                        ?[90m# BlogStepDefinition.he_create_a_new_category()?[0m
+    ?[36mThen ?[0m?[36mthe category must be displayed?[0m                  ?[90m# BlogStepDefinition.the_category_must_be_displayed()?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
